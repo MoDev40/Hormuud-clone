@@ -1,5 +1,6 @@
 *{
     font-family: "poppins";
+    text-transform: capitalize;
 }
 .navbar{
     display: flex;
@@ -7,23 +8,106 @@
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
 }
 .navbar img {
     width: 30px;
     height: 30px;
 }
-
 .navbar .logo img{
-    width: 170px;
+    width: 150px;
     height: 8vh;
 }
 .navbar ul{
     display: none;
 }
+.container{
+    background-color:rgba(245, 245, 250, 1);
+    width: 100%;
+}
 
 
+.herro{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.herro h1{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4bb273;
+}
+.herro img{
+    width: 300px;
+    float: right;
+}
 
+.dowload{
+    width: 140px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color:#23a153;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 35px 0;
+}
+.dowload img{
+    width: 25px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.features{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.features .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+.features .feature img{
+    width: 100px;
+    height:100px;
+}
+.features .feature .content {
+    margin-left: 25px;
+}
+.features .feature .content p{
+    color: #868585;
+    
+}
+
+/* Offers */
+
+.offers{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 15px;
+}
+.offers #ofimg{
+    width: 100%;
+}
+.offers .content{
+    text-align: start;
+}
+.offers .content p{
+    color: #868585;
+}
+
+footer{
+    height: 10vh;
+    text-align: center;
+    color: #868585;
+}
 
 @media screen and (min-width: 1024px) {
     .navbar ul{
@@ -43,5 +127,54 @@
     }
     .navbar .menu{
         display: none;
+    }
+/* Herro Section */
+    .herro{
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .herro h1{
+        font-size: 1rem;
+        font-weight: 700;
+        color: #4bb273;
+    }
+    .herro img{
+        width: 400px;
+    }
+    .dowload img{
+        width: 25px;
+        height: 25;
+        margin-left: 10px;
+    }
+
+    /* features */
+
+    .features{
+        display: flex;
+        flex-direction: row;
+        height: 30vh;
+    }
+    .features .feature{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .features .content {
+        text-align: start;
+    }
+
+    /* offers */
+    .offers{
+        display: flex;
+        flex-direction: row;
+    }
+    .offers #ofimg{
+        width: 500px;
+    }
+    .offers .content{
+        padding: 40px;
     }
 }
